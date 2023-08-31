@@ -58,34 +58,35 @@ _To identify suspicious activity related to the development of resources in the 
 ***Note: This playbook assumes that the organization has a baseline of normal network behavior and activity.***
 
 ***1. Data Sources***
-* _Endpoint logs (e.g. Sysmon, Windows Event Logs)_
-* _Network logs (e.g. NetFlow, Firewall logs)_
+* _Endpoint logs (e.g. ``Sysmon``, ``Windows Event Logs``)_
+* _Network logs (e.g. ``NetFlow``, ``Firewall logs``)_
 
 ***2. Initial Triage***
-* _Identify all hosts that have been communicating with known malicious IPs or domains._
-* _Look for any unusual or suspicious domain name requests._
-* _Check for any unusual or suspicious HTTP requests._
-* _Look for any unusual or suspicious DNS requests._
+* _Identify all hosts that have been communicating with known malicious ``IPs`` or ``domains``._
+* _Look for any unusual or suspicious ``domain name requests``._
+* _Check for any unusual or suspicious ``HTTP`` requests._
+* _Look for any unusual or suspicious ``DNS`` requests._
 
 ***3. Threat Hunting Techniques***
-* _Look for any unusual process or service creations._
-* _Look for any unusual or suspicious registry key modifications._
-* _Look for any unusual or suspicious file creations, modifications, or deletions._
-* _Look for any unusual or suspicious network connections or traffic._
-* _Look for any unusual or suspicious command-line arguments._
+* _Look for any unusual ``process`` or ``service`` creations._
+* _Look for any unusual or suspicious ``registry key`` modifications._
+* _Look for any unusual or suspicious ``file creations``, modifications, or deletions._
+* _Look for any unusual or suspicious ``network connections`` or ``traffic``._
+* _Look for any unusual or suspicious ``command-line`` arguments._
 
-***4. Indicators of Compromise (IOCs)***
-* _Malicious IP addresses or domains._
-* _Unusual or suspicious process names._
-* _Unusual or suspicious registry key names or values._
-* _Unusual or suspicious file names, paths, or extensions._
-* _Unusual or suspicious network ports or protocols._
+***4. Indicators of Compromise (``IOCs``)***
+* _Malicious ``IP addresses`` or ``domains``._
+* _Unusual or suspicious ``process names``._
+* _Unusual or suspicious ``registry key names`` or ``values``._
+* _Unusual or suspicious ``file names``, ``paths``, or ``extensions``._
+* _Unusual or suspicious ``network ports`` or ``protocols``._
+  
 ***5. Recommended Actions***
-* _Isolate any infected hosts from the network._
+* _``Isolate`` any ``infected hosts`` from the ``network``._
 * _Collect any relevant forensic evidence._
-* _Analyze any suspicious files, processes, or network traffic._
-* _Block or blackhole any malicious IPs or domains._
-* _Patch or update any vulnerable software or systems._
+* _Analyze any ``suspicious files``, ``processes``, or ``network traffic``._
+* _Block or ``blackhole`` any ``malicious IPs`` or ``domains``._
+* _``Patch`` or ``update`` any ``vulnerable software or systems``._
 * _Increase monitoring and detection capabilities for future attacks._
 
 ***Note: This playbook is intended as a general guide and should be customized based on the specific
@@ -102,33 +103,33 @@ _To detect any suspicious or malicious activity related to phishing emails and t
 unauthorized access._
 ***Playbook:***
 ***1. Identify relevant logs:***
-* _Email logs: Microsoft Exchange, Office 365, G Suite, etc._
-* _Web proxy logs: Microsoft Forefront, Palo Alto Networks, etc._
-* _Network traffic logs: Wireshark, Bro/Zeek, etc._
-* _Endpoint logs: Windows event logs, Sysmon logs, etc._
+* _Email logs: ``Microsoft Exchange``, ``Office 365``, ``G Suite``, etc._
+* _Web proxy logs: ``Microsoft Forefront``, ``Palo Alto Networks``, etc._
+* _Network traffic logs: ``Wireshark``, ``Bro/Zeek``, etc._
+* _Endpoint logs: ``Windows event logs``, ``Sysmon logs``, etc._
 
 ***2. Look for indicators of phishing emails:***
-* _Check for emails sent from suspicious or unknown domains._
+* _Check for emails sent from suspicious or ``unknown domains``._
 * _Look for emails with unusual or suspicious subject lines and body content._
 * _Check for emails sent from external sources, especially those not typically associated with business communication._
-* _Look for emails with attachments that are uncommon or unexpected, such as .zip, .exe, or .dll files._
+* _Look for emails with attachments that are uncommon or unexpected, such as ``.zip, .exe, or .dll files``._
 * _Check for emails with hyperlinks that lead to unknown or suspicious websites._
 
 ***3. Check for suspicious activity on endpoints:***
-* _Look for signs of credential harvesting, such as keylogging or password stealing._
-* _Check for unusual or unauthorized logins, such as logins from unknown or suspicious IP addresses._
-* _Check for the presence of suspicious files or applications, such as those related to remote access or command and control (C2) activity._
+* _Look for ``signs of credential harvesting``, such as ``keylogging or password stealing``._
+* _Check for ``unusual`` or`` unauthorized logins``, such as ``logins from unknown`` or ``suspicious IP addresses``._
+* _Check for the presence of ``suspicious files or applications``, such as those related to ``remote access`` or ``command and control`` ``(C2)`` activity._
 
 ***4. Analyze network traffic:***
-* _Look for signs of network reconnaissance, such as port scanning or ping sweeps._
-* _Check for unusual or unauthorized network connections, such as connections to known C2 servers._
-* _Look for signs of lateral movement, such as connections between internal systems that are not typically seen._
+* _Look for signs of network ``reconnaissance``, such as ``port scanning`` or ``ping sweeps``._
+* _Check for ``unusual`` or ``unauthorized network connections``, such as connections to known ``C2`` servers._
+* _Look for signs of ``lateral movement``, such as connections between ``internal`` systems that are not typically seen._
 
 ***5. Remediate any threats found:***
-* _Quarantine or delete suspicious emails, attachments, or files._
-* _Block or restrict access to known malicious IP addresses and domains._
-* _Disable or remove any suspicious or unauthorized user accounts._
-* _Ensure that all endpoints and systems are fully patched and updated._
+* _``Quarantine`` or ``delete`` suspicious ``emails``, ``attachments``, or ``files``._
+* _``Block`` or ``restrict access`` to known ``malicious IP addresses`` and ``domains``._
+* _``Disable`` or ``remove any suspicious`` or ``unauthorized user accounts``._
+* _Ensure that all endpoints and systems are fully ``patched and updated``._
 
 ***6. Review and refine:***
 * _Document all findings and actions taken._
