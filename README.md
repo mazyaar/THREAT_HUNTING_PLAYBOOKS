@@ -138,3 +138,58 @@ unauthorized access._
 
 ***By following this Threat Hunting playbook for the Initial Access hypothesis, you can proactively detect
 and respond to phishing attacks before they can do significant harm to your organization.***
+
+***
+
+### _Execution_
+
+**Objective:**
+_To proactively search for and identify potential malicious executions or attempted executions on
+endpoints, servers, and network devices._
+
+**Hypothesis:**
+_Adversaries have gained access to the network and are attempting to execute malicious code on
+endpoints or servers._
+
+**Playbook:**
+
+***1. Define scope: Identify the network, endpoints, and servers that are in scope for this hunt.
+Ensure that the systems are up to date with the latest patches and have updated antivirus
+software.***
+* Gather data: Collect and analyze the following data sources to identify potential
+malicious executions:
+* _``Endpoint logs`` (e.g., ``Windows event logs``, ``system logs``)._
+* _``Network logs`` (e.g., ``firewall logs``, ``DNS logs``)._
+* _``Application logs`` (e.g., ``web server logs``, ``database logs``)._
+* _``Anti-virus logs and reports``._
+
+***2. Develop queries: Develop and run queries across the collected data sources to identify any
+suspicious executions. Queries may include:***
+* _Any attempts to ``execute files`` from ``suspicious locations``._
+* _Any ``unauthorized executions`` of specific file types (e.g., ``.exe``, ``.bat``)._
+* _Any executions with suspicious ``command-line`` ``arguments`` or ``parameters``._
+* _Any executions of known ``malicious`` ``files`` or ``hashes``._
+
+***3. Analyze results: Review the results of the queries to identify potential indicators of compromise
+(IOCs). These may include:***
+* _Unusual ``file paths`` or ``locations``._
+* _Suspicious ``file names`` or ``extensions``._
+* _Known ``malware file ``hashes``._
+* _Any anomalous ``command-line`` ``parameters or arguments``._
+
+***4. Take action: Once potential IOCs have been identified, take the following actions:***
+* _Quarantine any suspicious files or systems._
+* _Conduct further investigation to confirm the existence of malicious activity._
+* _Update antivirus signatures and firewalls to block known malicious files and hashes._
+* _If necessary, escalate the incident to the incident response team for further action._
+
+***5. Report: Document the findings and actions taken during the hunt. Share the findings with the
+appropriate stakeholders and ensure that any necessary actions are taken to prevent future
+attacks.***
+
+
+***By following this playbook, you can proactively identify potential malicious executions and take steps to
+prevent further attacks on your network. It is important to conduct regular threat hunting exercises to
+stay ahead of potential attackers.***
+
+
