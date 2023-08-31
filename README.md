@@ -1,6 +1,5 @@
-
-# ***THREAT HUNTING PLAYBOOKS FOR MITRE TACTICS***
-### _Starting your first threat hunting_
+<h1 align="center"><i><b>THREAT HUNTING PLAYBOOKS FOR MITRE TACTICS 👋</h1></i></b>
+<h3 align="center">Starting your first threat hunting</h3>
 
 ## _Reconnaissance_
 ***
