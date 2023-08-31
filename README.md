@@ -1,11 +1,10 @@
 
-<h1><center><B><i> THREAT HUNTING PLAYBOOKS FOR MITRE TACTICS
-<center><h6><B><i>Starting your first threat hunting
+# ***THREAT HUNTING PLAYBOOKS FOR MITRE TACTICS***
+### _Starting your first threat hunting_
 
-
-<center><h2><i><B>
-Reconnaissance
-
+## _Reconnaissance_
+***
+	
 ## Objective: 
 ***Identify potential reconnaissance activity on the network***
 
