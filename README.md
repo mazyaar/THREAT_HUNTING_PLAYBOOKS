@@ -2,7 +2,8 @@
 <h3 align="center">Starting your first threat hunting</h3>
 
 ## _Reconnaissance_
-### Objective: 
+
+**Objective:**
 _Identify potential reconnaissance activity on the network_
 
  **Description:** _Reconnaissance is an important phase of an attack, where the attacker gathers information about the target system and network. This playbook aims to identify potential reconnaissance activity by analyzing Windows logs._
@@ -49,9 +50,10 @@ incident response team and management._
 
 
 ## _Developing Resources_
-### Hypothesis:
+
+**Hypothesis:**
 _Attackers are developing resources for the next stage of the attack._
-### Objective:
+**Objective:**
 _To identify suspicious activity related to the development of resources in the network._
 ***Note: This playbook assumes that the organization has a baseline of normal network behavior and activity.***
 
@@ -94,6 +96,7 @@ plan in place and to involve all relevant stakeholders in the threat hunting and
 ***
 
 ## _Initial Access_
+
 **Hypothesis:**
 _Adversaries are using phishing emails to gain initial access to the network._
 **Objective:**
