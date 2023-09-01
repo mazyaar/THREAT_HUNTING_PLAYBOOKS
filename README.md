@@ -2,10 +2,8 @@
 <h3 align="center">Starting your first threat hunting</h3>
 
 ## _Reconnaissance_
-***
-	
-## Objective: 
-***Identify potential reconnaissance activity on the network***
+### Objective: 
+_Identify potential reconnaissance activity on the network_
 
  **Description:** _Reconnaissance is an important phase of an attack, where the attacker gathers information about the target system and network. This playbook aims to identify potential reconnaissance activity by analyzing Windows logs._
 
@@ -191,5 +189,48 @@ attacks.***
 ***By following this playbook, you can proactively identify potential malicious executions and take steps to
 prevent further attacks on your network. It is important to conduct regular threat hunting exercises to
 stay ahead of potential attackers.***
+
+***
+
+## _Persistence_
+
+**Objective: **
+_To proactively search for and identify potential persistence mechanisms that adversaries may use to maintain access to endpoints, servers, and network devices._
+
+**Hypothesis:**
+_Adversaries have established persistence mechanisms on endpoints, servers, or network devices to maintain access and control over the environment._
+
+**Playbook:**
+
+***1.	Define scope: Identify the network, endpoints, and servers that are in scope for this hunt. Ensure that the systems are up to date with the latest patches and have updated antivirus software.***
+
+***2.	Gather data: Collect and analyze the following data sources to identify potential persistence mechanisms:***
+*	_Endpoint logs (e.g., Windows event logs, system logs)_
+*	_Network logs (e.g., firewall logs, DNS logs)_
+*	_Application logs (e.g., web server logs, database logs)_
+*	_Anti-virus logs and reports_
+
+***3.	Develop queries: Develop and run queries across the collected data sources to identify any suspicious activities related to persistence. Queries may include:***
+*	_Any new scheduled tasks or services created_
+*	_Any registry changes related to persistence_
+*	_Any changes to autorun entries or startup folders_
+*	_Any changes to system files or directories that are commonly used for persistence_
+
+***4.	Analyze results: Review the results of the queries to identify potential indicators of compromise (IOCs). These may include:***
+ 
+*	_New scheduled tasks or services that are not associated with known applications or services_
+*	_Suspicious registry keys or values_
+*	_Changes to autorun entries or startup folders that are not authorized or expected_
+*	_Any modifications to system files or directories that could indicate tampering_
+
+***5.	Take action: Once potential IOCs have been identified, take the following actions:***
+*	_Remove any suspicious persistence mechanisms_
+*	_Conduct further investigation to confirm the existence of malicious activity_
+*	_Update antivirus signatures and firewalls to block known malicious files and hashes_
+*	_If necessary, escalate the incident to the incident response team for further action_
+
+***6.	Report: Document the findings and actions taken during the hunt. Share the findings with the appropriate stakeholders and ensure that any necessary actions are taken to prevent future attacks.***
+
+***By following this playbook, you can proactively identify potential persistence mechanisms and take steps to prevent further attacks on your network. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers.***
 
 
