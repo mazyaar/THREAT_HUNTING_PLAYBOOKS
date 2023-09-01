@@ -530,6 +530,85 @@ _Adversaries have gained access to the environment and are attempting to establi
 
 ***
 
+## _Exfiltration_
 
+**Objective:**
+_To proactively search for and identify potential attempts by adversaries to exfiltrate sensitive data from the environment._
 
+**Hypothesis:**
+_Adversaries have gained access to the environment and are attempting to exfiltrate sensitive data out of the organization._
+
+**Playbook:**
+***1.	Define scope: Identify the network, endpoints, and servers that are in scope for this hunt. Ensure that the systems are up to date with the latest patches and have updated antivirus software.***
+
+***2.	Gather data: Collect and analyze the following data sources to identify potential exfiltration attempts:***
+*	_Endpoint logs (e.g., ``Windows event logs``, ``system logs``)._
+*	_Network logs (e.g., ``firewall logs``, ``DNS logs``)._
+*	_Application logs (e.g., ``web server logs``, ``database logs``)._
+*	_``Email logs`` and ``alerts``._
+
+***3.	Develop queries: Develop and run queries across the collected data sources to identify any suspicious activities related to exfiltration. Queries may include:***
+*	_Any attempts to access or move sensitive data to external locations._
+*	_Any attempts to compress or encrypt data before exfiltration._
+*	_Any attempts to transfer large amounts of data during non-business hours._
+
+***4.	Analyze results: Review the results of the queries to identify potential indicators of compromise (IOCs). These may include:***
+*	_``Unusual network traffic`` to ``external IP addresses`` or ``domains``._
+*	_``Suspicious email activity`` or attachments._
+*	_Changes to file or directory permissions._
+
+***5.	Take action: Once potential IOCs have been identified, take the following actions:***
+*	_Block any ``unauthorized network traffic`` to ``external IP addresses`` or ``domains``._
+*	_Quarantine any ``infected`` systems or devices._
+*	_Review and ``update file or directory permissions`` to ``prevent unauthorized access``._
+*	_Conduct further investigation to confirm the existence of malicious activity._
+*	_Update antivirus signatures and firewalls to block known ``malicious files`` and hashes._
+*	_If necessary, escalate the incident to the incident response team for further action._
+
+***6.	Report: Document the findings and actions taken during the hunt. Share the findings with the appropriate stakeholders and ensure that any necessary actions are taken to prevent future attacks.***
+
+***By following this playbook, you can proactively identify potential exfiltration attempts used by adversaries and take steps to prevent further attacks on your network. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers.***
+ 
+ ***
+
+ ## _Impact_
+
+**Objective:**
+_To proactively search for and identify potential threats that could have an impact on critical assets within the organization._
+
+**Hypothesis:**
+_Adversaries have already gained access to the environment and are attempting to carry out activities that could lead to significant impact on the organization._
+
+**Playbook:**
+***1.	Define scope: Identify the critical assets within the environment that could potentially be impacted. These assets may include servers, databases, applications, and other critical systems.***
+
+***2.	Gather data: Collect and analyze the following data sources to identify potential activities that could lead to impact:***
+*	_Endpoint logs (e.g., ``Windows event logs``, ``system logs``)._
+*	_Network logs (e.g., firewall logs, ``DNS logs``)._
+*	_Application logs (e.g., ``web server logs``, ``database logs``)._
+*	_``Email logs`` and ``alerts``._
+
+***3.	Develop queries: Develop and run queries across the collected data sources to identify any suspicious activities related to impact. Queries may include:***
+*	_Any attempts to modify or delete critical files or directories._
+*	_Any attempts to modify or delete system settings or configurations._
+*	_Any attempts to launch denial-of-service attacks against critical systems._
+
+***4.	Analyze results: Review the results of the queries to identify potential indicators of compromise (IOCs). These may include:***
+*	_Unusual network traffic to critical systems or applications._
+*	_Unusual login or access attempts to critical systems or applications._
+*	_Changes to file or directory permissions or configurations._
+
+***5.	Take action: Once potential IOCs have been identified, take the following actions:***
+*	_Block any unauthorized network traffic to critical systems or applications._
+*	_Quarantine any infected systems or devices._
+*	_Review and update file or directory permissions and configurations to prevent unauthorized access._
+*	_Conduct further investigation to confirm the existence of malicious activity._
+*	_Update antivirus signatures and firewalls to block known ``malicious files`` and ``hashes``._
+*	_If necessary, escalate the incident to the incident response team for further action._
+
+***6.	Report: Document the findings and actions taken during the hunt. Share the findings with the appropriate stakeholders and ensure that any necessary actions are taken to prevent future attacks.***
+
+***By following this playbook, you can proactively identify potential threats that could have an impact on critical assets within the organization and take steps to prevent further attacks. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers and minimize the impact of any successful attacks.***
+
+***
 
