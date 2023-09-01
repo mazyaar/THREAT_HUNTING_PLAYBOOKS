@@ -44,7 +44,7 @@ improvements._
 * _Report the findings and recommendations to the appropriate stakeholders, such as the
 incident response team and management._
 
-* #### _The Reconnaissance Threat Hunting playbook aims to identify potential reconnaissance activity on the network by analyzing Windows logs. By following this playbook, organizations can detect and respond to reconnaissance activity in a timely manner, preventing further malicious activity on the network._
+***The Reconnaissance Threat Hunting playbook aims to identify potential reconnaissance activity on the network by analyzing Windows logs. By following this playbook, organizations can detect and respond to reconnaissance activity in a timely manner, preventing further malicious activity on the network.***
 ***
 
 
@@ -93,7 +93,7 @@ plan in place and to involve all relevant stakeholders in the threat hunting and
 
 ***
 
-## _nitial Access_
+## _Initial Access_
 **Hypothesis:**
 _Adversaries are using phishing emails to gain initial access to the network._
 **Objective:**
@@ -194,7 +194,7 @@ stay ahead of potential attackers.***
 
 ## _Persistence_
 
-**Objective: **
+**Objective:**
 _To proactively search for and identify potential persistence mechanisms that adversaries may use to maintain access to endpoints, servers, and network devices._
 
 **Hypothesis:**
@@ -237,7 +237,7 @@ _Adversaries have established persistence mechanisms on endpoints, servers, or n
 
 ## _Privilege escalation_
 
-### Objective:
+**Objective:**
 _To proactively search for and identify potential privilege escalation attempts by adversaries on endpoints, servers, and network devices._
 
 **Hypothesis:**
@@ -277,7 +277,7 @@ _Adversaries have gained access to a system and are attempting to escalate their
 ***
 ## _Defense Evasion_
 
-### Objective:
+**Objective:**
 _To proactively search for and identify potential attempts by adversaries to evade detection and remain undetected in the environment._
 
 **Hypothesis:**
@@ -317,7 +317,8 @@ _Adversaries have deployed various evasion techniques to bypass security control
 ***
 
 ## _Credential Access_
-### Objective:
+
+**Objective:**
 _To proactively search for and identify potential attempts by adversaries to gain unauthorized access to credentials and user accounts._
 
 **Hypothesis:**
@@ -358,7 +359,7 @@ _Adversaries have gained access to a system and are attempting to steal credenti
 ***
 ## _Discovery_
 
-### Objective:
+**Objective:**
 _To proactively search for and identify potential attempts by adversaries to gather information about the environment for the purpose of launching further attacks._
 
 **Hypothesis:**
