@@ -233,4 +233,171 @@ _Adversaries have established persistence mechanisms on endpoints, servers, or n
 
 ***By following this playbook, you can proactively identify potential persistence mechanisms and take steps to prevent further attacks on your network. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers.***
 
+***
+
+## _Privilege escalation_
+
+### Objective:
+_To proactively search for and identify potential privilege escalation attempts by adversaries on endpoints, servers, and network devices._
+
+**Hypothesis:**
+_Adversaries have gained access to a system and are attempting to escalate their privileges to gain greater control over the environment._
+
+**Playbook:**
+***1.	Define scope: Identify the network, endpoints, and servers that are in scope for this hunt. Ensure that the systems are up to date with the latest patches and have updated antivirus software.***
+
+***2.	Gather data: Collect and analyze the following data sources to identify potential privilege escalation attempts:***
+*	_Endpoint logs (e.g., Windows event logs, system logs)_
+*	_Network logs (e.g., firewall logs, DNS logs)_
+*	_Application logs (e.g., web server logs, database logs)_
+*	_Anti-virus logs and reports_
+
+***3.	Develop queries: Develop and run queries across the collected data sources to identify any suspicious activities related to privilege escalation. Queries may include:***
+*	_Any changes to user accounts or group membership_
+*	_Any attempts to run applications or commands with elevated privileges_
+*	_Any attempts to exploit known vulnerabilities to escalate privileges_
+
+***4.	Analyze results: Review the results of the queries to identify potential indicators of compromise (IOCs). These may include:***
+*	_Unusual changes to user accounts or group membership_
+*	_Suspicious use of elevated privileges_
+*	_Any attempts to exploit known vulnerabilities_
+
+***5.	Take action: Once potential IOCs have been identified, take the following actions:***
+*	_Remove any unauthorized user accounts or group memberships_
+*	_Disable any elevated privileges that are not necessary or authorized_
+*	_Conduct further investigation to confirm the existence of malicious activity_
+*	_Update antivirus signatures and firewalls to block known malicious files and hashes_
+*	_If necessary, escalate the incident to the incident response team for further action_
+ 
+
+***6.	Report: Document the findings and actions taken during the hunt. Share the findings with the appropriate stakeholders and ensure that any necessary actions are taken to prevent future attacks.***
+
+***By following this playbook, you can proactively identify potential privilege escalation attempts and take steps to prevent further attacks on your network. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers.*** 
+
+***
+## _Defense Evasion_
+
+### Objective:
+_To proactively search for and identify potential attempts by adversaries to evade detection and remain undetected in the environment._
+
+**Hypothesis:**
+_Adversaries have deployed various evasion techniques to bypass security controls_ and remain undetected in the environment.
+
+**Playbook:**
+***1.	Define scope: Identify the network, endpoints, and servers that are in scope for this hunt. Ensure that the systems are up to date with the latest patches and have updated antivirus software.***
+
+***2.	Gather data: Collect and analyze the following data sources to identify potential evasion techniques:***
+*	_Endpoint logs (e.g., Windows event logs, system logs)_
+*	_Network logs (e.g., firewall logs, DNS logs)_
+*	_Application logs (e.g., web server logs, database logs)_
+*	_Anti-virus logs and reports_
+
+***3.	Develop queries: Develop and run queries across the collected data sources to identify any suspicious activities related to evasion techniques. Queries may include:***
+*	_Any attempts to disable or bypass security controls (e.g., antivirus, firewalls)_
+*	_Any attempts to use known legitimate tools for malicious purposes (e.g., PowerShell, netsh)_
+*	_Any attempts to hide or obfuscate malicious activity (e.g., using rootkits or backdoors)_
+
+***4.	Analyze results: Review the results of the queries to identify potential indicators of compromise (IOCs). These may include:***
+ 
+*	_Attempts to disable or bypass security controls_
+*	_Suspicious use of legitimate tools for malicious purposes_
+*	_Any attempts to hide or obfuscate malicious activity_
+
+***5.	Take action: Once potential IOCs have been identified, take the following actions:***
+*	_Enable any disabled or bypassed security controls_
+*	_Remove any suspicious tools or scripts used for malicious purposes_
+*	_Conduct further investigation to confirm the existence of malicious activity_
+*	_Update antivirus signatures and firewalls to block known malicious files and hashes_
+*	_If necessary, escalate the incident to the incident response team for further action_
+
+***6.	Report: Document the findings and actions taken during the hunt. Share the findings with the appropriate stakeholders and ensure that any necessary actions are taken to prevent future attacks.***
+
+***By following this playbook, you can proactively identify potential defense evasion techniques used by adversaries and take steps to prevent further attacks on your network. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers.***
+ 
+***
+
+## _Credential Access_
+### Objective:
+_To proactively search for and identify potential attempts by adversaries to gain unauthorized access to credentials and user accounts._
+
+**Hypothesis:**
+_Adversaries have gained access to a system and are attempting to steal credentials to gain greater control over the environment._
+
+**Playbook:**
+
+***1.	Define scope: Identify the network, endpoints, and servers that are in scope for this hunt. Ensure that the systems are up to date with the latest patches and have updated antivirus software.***
+
+***2.	Gather data: Collect and analyze the following data sources to identify potential credential theft attempts:***
+*	_Endpoint logs (e.g., Windows event logs, system logs)_
+*	_Network logs (e.g., firewall logs, DNS logs)_
+*	_Application logs (e.g., web server logs, database logs)_
+*	_Anti-virus logs and reports_
+
+***3.	Develop queries: Develop and run queries across the collected data sources to identify any suspicious activities related to credential theft. Queries may include:***
+*	_Any attempts to brute force login credentials_
+*	_Any attempts to use known credential harvesting techniques (e.g., phishing, keylogging)_
+*	_Any attempts to dump passwords from memory or registry_
+
+***4.	Analyze results: Review the results of the queries to identify potential indicators of compromise (IOCs). These may include:***
+*	_Multiple failed login attempts from the same source_
+*	_Suspicious network traffic to known command and control (C2) servers_
+*	_Unusual changes to user accounts or group membership_
+
+***5.	Take action: Once potential IOCs have been identified, take the following actions:***
+*	_Reset compromised user account passwords_
+*	_Remove any unauthorized user accounts or group memberships_
+*	_Conduct further investigation to confirm the existence of malicious activity_
+*	_Update antivirus signatures and firewalls to block known malicious files and hashes_
+*	_If necessary, escalate the incident to the incident response team for further action_
+ 
+
+***6.	Report: Document the findings and actions taken during the hunt. Share the findings with the appropriate stakeholders and ensure that any necessary actions are taken to prevent future attacks.***
+
+***By following this playbook, you can proactively identify potential credential theft attempts and take steps to prevent further attacks on your network. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers.***
+
+***
+## _Discovery_
+
+### Objective:
+_To proactively search for and identify potential attempts by adversaries to gather information about the environment for the purpose of launching further attacks._
+
+**Hypothesis:**
+_Adversaries have gained access to the environment and are attempting to gather information about the network, systems, and applications._
+
+**Playbook:**
+
+***1.	_Define scope: Identify the network, endpoints, and servers that are in scope for this hunt. Ensure that the systems are up to date with the latest patches and have updated antivirus software.***
+
+***2.	Gather data: Collect and analyze the following data sources to identify potential reconnaissance activities:***
+*	_Endpoint logs (e.g., Windows event logs, system logs)_
+*	_Network logs (e.g., firewall logs, DNS logs)_
+*	_Application logs (e.g., web server logs, database logs)_
+*	_Anti-virus logs and reports_
+
+***3.	Develop queries: Develop and run queries across the collected data sources to identify any suspicious activities related to reconnaissance. Queries may include:***
+*	_Any attempts to scan the network or systems_
+*	_Any attempts to gather information about the environment (e.g., domain names, system configurations)_
+*	_Any attempts to identify vulnerable systems or applications_
+
+***4.	Analyze results: Review the results of the queries to identify potential indicators of compromise (IOCs). These may include:***
+ 
+*	_Multiple failed login attempts from the same source_
+*	_Suspicious network traffic to known command and control (C2) servers_
+*	_Unusual changes to user accounts or group membership_
+
+***5.	Take action: Once potential IOCs have been identified, take the following actions:***
+*	_Close any open ports or services that are not needed_
+*	_Review and update firewall and access control lists to block known malicious traffic_
+*	_Conduct further investigation to confirm the existence of malicious activity_
+*	_Update antivirus signatures and firewalls to block known malicious files and hashes_
+*	_If necessary, escalate the incident to the incident response team for further action_
+
+***6.	Report: Document the findings and actions taken during the hunt. Share the findings with the appropriate stakeholders and ensure that any necessary actions are taken to prevent future attacks.***
+
+***By following this playbook, you can proactively identify potential reconnaissance activities used by adversaries and take steps to prevent further attacks on your network. It is important to conduct regular threat hunting exercises to stay ahead of potential attackers.***
+
+ ***
+
+ 
+
 
